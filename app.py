@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     version = os.getenv("APP_VERSION", "1.0")
-    return f"<h1>Hello from ECS! Version: {version}</h1><p>CI/CD is working!</p>"
+    return f"<h1>Hello from ECS! App Version: {version}</h1><p>CI/CD is working!</p>"
 
 @app.route("/health")
 def health():
